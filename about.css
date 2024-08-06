@@ -1,0 +1,263 @@
+/* About cards */
+.hoverCardAbout {
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+    width: 250px;
+    align-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hoverCardAboutAbout .p-4 {
+    padding: 1rem;
+    /* Adjust padding as needed */
+  }
+
+  .hoverCardAbout .p-4 h2,
+  .hoverCardAbout .p-4 p {
+    margin: 0;
+  }
+
+  .hoverCardAbout-content {
+    position: absolute;
+    color: black;
+    z-index: 1;
+    transition: color 0.5s;
+  }
+
+  .hoverCardAbout-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:hsl(176, 80%, 37%);
+    transition: height 0.5s;
+  }
+
+  .hoverCardAbout:hover .hoverCardAbout-overlay {
+    height: 100%;
+  }
+
+  .hoverCardAbout:hover .hoverCardAbout-content {
+    color: white;
+  }
+
+  /* parallex */
+  .parallaxAbout-container {
+    height: 400px; /* Adjust height as needed */
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    position: relative;
+    overflow-y: hidden;
+  }
+  .parallaxAbout {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+  .parallaxAbout img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -520px;
+    left: 0;
+    transform: translateZ(-1px) scale(2);
+    filter: brightness(0.3);
+  }
+
+  
+.responsiveAbout {
+    display: none;
+  }
+  
+  .changeAbout {
+    position: relative;
+    top: -320px;
+  }
+  
+  @media (max-width: 991px) {
+    .responsiveAbout {
+      display: block;
+    }
+  
+    .parallaxAbout img {
+      display: none;
+    }
+  
+    .parallaxAbout-container {
+      display: none;
+    }
+  
+    .parallaxAbout {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+    }
+  
+    .changeAbout {
+      position: relative;
+      top: -235px;
+    }
+  }
+
+  .changes {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(176, 80%, 37%, 0.6);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+
+    transition: background-color 5ms; /* Added transition property */
+  }
+
+  .img-fluid-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Ensures the image does not overflow the container */
+  }
+
+  .img-fluid-container:hover .changes {
+    display: block;
+  }
+  .position {
+    margin-top: 155px;
+  }
+ 
+
+
+  /* slider of home page */
+
+  .third-heading {
+    position: relative;
+    /* top: 115px; */
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 290px;
+  }
+
+  .third-heading-navbar {
+    width: 75%;
+    height: 250px;
+  }
+
+  #containerdiv {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    display: block !important;
+  }
+
+  #scrollContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll !important;
+    position: absolute;
+    top: 15px;
+  }
+
+  #scrollContent div {
+    padding-left: 45px;
+  }
+
+  #scrollContent img {
+    height: 200px;
+  }
+
+  #scrollContent img:hover {
+    transform: scale(1.1);
+  }
+
+  #scrollContent h6 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 5px;
+    text-align: center;
+    /* Create a gradient background */
+    background-image: linear-gradient(45deg, #9f742b, #f4cc7d);
+    /* Set background clip to text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Set transparent text color */
+    color: transparent;
+  }
+
+  #scrollLeft {
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 3;
+    border: none;
+    display: none;
+    border-radius: 50%;
+    color: antiquewhite;
+    background-color: #0e065b;
+  }
+
+  #scrollRight {
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    right: 0px;
+    z-index: 3;
+    display: none;
+    border: none;
+    border-radius: 50%;
+    color: antiquewhite;
+    background-color: #0e065b;
+  }
+
+  @media screen and (max-width: 600px) {
+    .third-heading {
+      position: relative;
+      z-index: 3;
+      background-color: white;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      border-bottom: 1px solid #aea4a47c;
+      height: 300px;
+      width: 100%;
+    }
+
+    .third-heading-navbar {
+      width: 100%;
+      height: 270px;
+    }
+
+    #containerdiv {
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+      display: block !important;
+    }
+
+    #scrollLeft {
+      display: none;
+    }
+
+    #scrollRight {
+      display: none;
+    }
+  }
+

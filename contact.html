@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flooring Consultant</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="service.css" />
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container-fluid mx-5">
+        <a href="index.html">
+          <img
+            src="image/logo (1).png"
+            class="mx-2"
+            style="width: 150px"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler bg-danger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto p-2 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="flooring.html">Flooring Division</a></li>
+                <li><a class="dropdown-item" href="paint.html">Paint Division</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-md text btn-outline-light">CONTACT US</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR END -->
+
+    <!-- CONTENT OVER BACKGROUND START -->
+    <div class="bg-containerContact">
+      <div
+        class="bg-imageContact"
+        style="background-image: url('image/Home2.jpg')"
+      ></div>
+      <div class="container content">
+        <div class="row rows justify-content-center">
+          <div class="col-md-4 text-light text-center">
+            <h1 class="fs-1 fw-bold">Contact Us</h1>
+
+            <div class="d-flex align-items-center justify-content-center">
+              <div><h5>Home</h5></div>
+              <div class="px-2">
+                <span class="material-symbols-outlined text-danger fs-3">
+                  chevron_right
+                </span>
+              </div>
+              <div><h5>Contact</h5></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTENT OVER BACKGROUND END -->
+
+    <!-- OFF CANVAS START -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header bg-dark">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <a class="navbar-brand text-light" style="width: 100px" href="#"
+            ><img
+              src="image/final-logoW.png"
+              width="250px"
+              class="img-fluid"
+              alt=""
+          /></a>
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset bg-danger"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body bg-danger">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold mx-3" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold mx-3" href="service.html"
+              >Our Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold mx-3" href="about.html"
+              >About us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold mx-3" href="portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold mx-3" href="contact.html"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- OFF CANVAS END -->
+
+    <!-- CONTACT FORM START -->
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <div class="row rows">
+            <div class="col-md-6 shadow p-3 mb-5 bg-body rounded">
+              <form class="pb-3">
+                <div class="row">
+                  <div class="col-lg-12 mt-4">
+                    <div class="form-group">
+                      <label for="name" class="fw-bold">Name:</label>
+                      <input
+                        type="text"
+                        class="form-control p-3"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12 mt-4">
+                    <div class="form-group">
+                      <label for="name" class="fw-bold">Email:</label>
+                      <input
+                        type="text"
+                        class="form-control p-3"
+                        id="name"
+                        name="name"
+                        required
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 mt-4">
+                    <div class="form-group">
+                      <label for="selection" class="fw-bold">Selection:</label>
+                      <select
+                        class="form-control p-3"
+                        id="selection"
+                        name="selection"
+                      >
+                        <option value="option1">Select</option>
+                        <option value="option2">IT Management</option>
+                        <option value="option2">IT Management</option>
+                        <option value="option2">IT Management</option>
+                        <option value="option2">IT Management</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-4">
+                    <div class="form-group">
+                      <label for="name" class="fw-bold">Telephone:</label>
+                      <input
+                        type="text"
+                        class="form-control p-3"
+                        id="name"
+                        name="name"
+                        required
+                        placeholder="Phone"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-4">
+                  <label for="additional-details" class="fw-bold"
+                    >Additional Details:</label
+                  >
+                  <textarea
+                    class="form-control p-4"
+                    id="additional-details"
+                    name="additional-details"
+                    rows="3"
+                    placeholder="Write Message"
+                  ></textarea>
+                </div>
+                <button type="submit" class="mt-5 btn btn-danger">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="col-md-6 px-md-5">
+              <div><h5 class="text-danger">CONTACT US</h5></div>
+              <div><h1 class="text-dark fw-bold">Let's Ge In Touch</h1></div>
+              <div>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+              </div>
+              <div class="row rows">
+                <div class="col-md-6 mt-4">
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="material-symbols-outlined px-1 fs-3 text-danger"
+                    >
+                      location_on
+                    </span>
+                    <h5 class="text-dark">Kuta Office</h5>
+                  </div>
+                  <div>
+                    <h6 class="text-muted">Jl. Raya Kuta No.70, Kuta - Bali</h6>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="material-symbols-outlined px-1 fs-3 text-danger"
+                    >
+                      location_on
+                    </span>
+                    <h5 class="text-datk">Ubud Office</h5>
+                  </div>
+                  <div>
+                    <h6 class="text-muted">Jl. Raya Kedewatan No.44, Ubud</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row rows">
+                <div class="col-md-6 mt-4">
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="material-symbols-outlined px-1 fs-3 text-danger"
+                    >
+                      call
+                    </span>
+                    <h5 class="text-dark">Calling Support</h5>
+                  </div>
+                  <div>
+                    <h6 class="text-muted">(+62)81 235 26512</h6>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="material-symbols-outlined px-1 fs-3 text-danger"
+                    >
+                      mail
+                    </span>
+                    <h5 class="text-datk">Email Information</h5>
+                  </div>
+                  <div>
+                    <h6 class="text-muted">support@domain.com</h6>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div>
+                <h5 class="text-dark mt-4">Follow Us On Social Media</h5>
+              </div>
+              <div class="mt-4">
+                <a href=""><img src="image/fb.svg" alt="" /></a>
+                <a href=""><img src="image/link.svg" alt="" /></a>
+                <a href=""><img src="image/insta.svg" alt="" /></a>
+                <a href=""><img src="image/fb.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT FORM END -->
+
+    <!-- GOOGLE MAP START -->
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1971.8378367499436!2d115.177064!3d-8.722315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd246b6c57f7a27%3A0xe5376cbdb0cc09d!2sJl.%20Raya%20Kuta%2C%20Kuta%2C%20Kec.%20Kuta%2C%20Kabupaten%20Badung%2C%20Bali%2080361%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1709385287792!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <!-- GOOGLE MAP END  -->
+
+  <!-- FOOTER START -->
+  <footer>
+    <div class="container-fluid bg-light shadow-lg">
+      <div class="container">
+        <div class="row mt-5 footerborder">
+          <div class="col-md-5 text-secondary">
+            <div class="px-lg-0 mt-4 px-sm-0 px-md-0">
+              <img src="image/logo (1).png" width="200px" alt="" />
+            </div>
+            <div>
+              <p class="fst-italic">
+                We're excited to hear from you! Whether you have questions
+                about our services, want to discuss a potential project, or
+                simply want to learn more about how Analytics Nest can help
+                your business thrive, we're here to assist you.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2 text-secondary">
+            <h5 class="mt-5">COMPANY</h5>
+            <div class="mt-3">
+              <li>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined text-danger">
+                    chevron_right
+                  </span>
+                  <p class="text-secondary">Home</p>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined text-danger">
+                    chevron_right
+                  </span>
+                  <p class="text-secondary">About Us</p>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined text-danger">
+                    chevron_right
+                  </span>
+                  <p class="text-secondary">Services</p>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined text-danger">
+                    chevron_right
+                  </span>
+                  <p class="text-secondary">Contact</p>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined text-danger">
+                    chevron_right
+                  </span>
+                  <p class="text-secondary">Portfolio</p>
+                </div>
+              </li>
+            </div>
+          </div>
+ 
+          <div class="col-md-3 text-secondary">
+            <h5 class="mt-5">CONTACT US</h5>
+            <div class="mt-3">
+              <li>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined px-3 text-danger">
+                    location_on
+                  </span>
+                  <p class="text-secondary">Karachi,Pakistan</p>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined px-3 text-danger">
+                    mail
+                  </span>
+                  <p class="text-secondary">info@analyticsnest.io</p>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined px-3 text-danger">
+                    call
+                  </span>
+                  <p class="text-secondary">(+92) 335-0138248</p>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="container">
+        <hr class="text-danger" />
+      </div>
+ 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <p class="text-secondary">
+              @Copyright 2024
+              <span class="text-danger">Analytics Nest</span> All Rights
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+ 
+  </body>
+ 
+  </html>

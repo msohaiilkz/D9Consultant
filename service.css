@@ -1,0 +1,163 @@
+      .hoverCardService {
+        position: relative;
+        overflow: hidden;
+        height: 310px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .hoverCardService-content {
+        position: absolute;
+        color: black;
+        z-index: 1;
+        transition: color 0.5s;
+      }
+
+      .hoverCardService-content p {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+      .hoverCardService-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: hsl(176, 80%, 37%);
+        transition: height 0.7s;
+      }
+
+      .hoverCardService:hover .hoverCardService-overlay {
+        height: 100%;
+      }
+
+      .hoverCardService:hover .hoverCardService-content {
+        color: white;
+      }
+
+      .hoverCardService:hover .hoverCardService-content span {
+        color: white;
+      }
+
+      .fontServiceSpan {
+        font-size: 60px;
+        font-weight: 500;
+        color: hsl(176, 80%, 37%);
+      }
+
+      .tab.active {
+        color: red;
+      }
+
+      .tab-content {
+        display: none;
+        padding: 2px;
+        background-color: white;
+      }
+
+      .tab-content.active {
+        display: block;
+        transition: all 0.5s ease-in-out;
+      }
+
+      @media (max-width: 991px) {
+        .displayNoneService {
+          display: none;
+        }
+      }
+
+      /* parallex */
+      .parallaxService-container {
+        height: 500px; /* Adjust height as needed */
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 1px;
+        position: relative;
+        overflow-y: hidden;
+      }
+      .parallaxService {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+      }
+      .parallaxService img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -1120px;
+        left: 0;
+        transform: translateZ(-1px) scale(2);
+        filter: brightness(0.3);
+      }
+
+      .responsiveService {
+        display: none;
+      }
+
+      .changeService {
+        position: relative;
+        top: -400px;
+      }
+
+      @media (max-width: 991px) {
+        .responsiveService {
+          display: block;
+          height: 500px !important;
+          filter: brightness(0.4);
+        }
+
+        .parallaxService img {
+          display: none;
+        }
+
+        .parallaxService-container {
+          display: none;
+        }
+
+        .parallaxService {
+          width: 100%;
+          height: 100%;
+          transform-style: preserve-3d;
+        }
+
+        .changeService {
+          position: relative;
+          top: -400px;
+        }
+      }
+      .positionService {
+        position: relative;
+        top: -180px;
+      }
+
+
+      /* portfolio */
+      .cards {
+        /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+        background: linear-gradient(
+          -45deg,
+          hsl(150, 80%, 37%),
+          hsl(176, 80%, 37%),
+          hsl(190, 61%, 36%),
+          hsl(205, 80%, 37%)
+        );
+        background-size: 400% 400%;
+        animation: gradientAnimation 15s ease infinite;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
